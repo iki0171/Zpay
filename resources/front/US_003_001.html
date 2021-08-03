@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<title>상생 국민지원금 조회결과>결제앱 선택하기 popup</title>
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="inner top_logo">
+                <a href="javascript:void(0);" class="logo_gov"><h1>상생국민지원금 대한민국정부</h1></a>
+                <a href="javascript:void(0);" class="logo_zpay"><h1>zeroPay</h1></a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            
+            <!-- contents -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    
+                    <section class="section">
+                        <form action="">
+                            <fieldset>
+                                <div class="sub_grp">
+                                    <h2 class="tit_h2">상생 국민지원금 조회결과</h2>
+                                    <!-- 앱선택 -->
+                                    <div class="cnt_box">
+                                        <div class="btn_area mt60">
+                                            <a href="#none" class="btn btn_type01 color3 bg3 btn_sch" id="">결제앱 선택하기</a>
+                                        </div>
+                                    </div>
+                                    <!--// 앱선택 -->
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+            <!-- contents -->
+
+        </div>
+        <!--// container -->
+
+        <!-- layer popup -->
+        <div class="pop_wrap on" id="popup">
+            <div class="layer_pop app w790">
+                <div class="pop_tit">
+                    <strong>사용 가능한 APP</strong>
+                </div>
+                <div class="pop_container">
+                    <div class="app_area">
+                        <ul class="app_list">
+                            <li>
+                                <div class="ap1">
+                                    <i class="i_icon"></i><p>비플제로페이</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap2">
+                                    <i class="i_icon"></i><p>체크페이</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap3">
+                                    <i class="i_icon"></i><p>머니트리</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap4">
+                                    <i class="i_icon"></i><p>페이코</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap5">
+                                    <i class="i_icon"></i><p>핀트</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap6">
+                                    <i class="i_icon"></i><p>핀크</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap7">
+                                    <i class="i_icon"></i><p>티머니페이</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap8">
+                                    <i class="i_icon"></i><p>슬배생</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap9">
+                                    <i class="i_icon"></i><p>010제로페이</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap10">
+                                    <i class="i_icon"></i><p>유비페이</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap11">
+                                    <i class="i_icon"></i><p>시럽</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap12">
+                                    <i class="i_icon"></i><p>올원뱅크</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap13">
+                                    <i class="i_icon"></i><p>BNK경남은행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap14">
+                                    <i class="i_icon"></i><p>썸뱅크</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap15">
+                                    <i class="i_icon"></i><p>IM샵(#)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap16">
+                                    <i class="i_icon"></i><p>전북은행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap17">
+                                    <i class="i_icon"></i><p>광주은행</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap18">
+                                    <i class="i_icon"></i><p>신한 쏠(SOL)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ap19">
+                                    <i class="i_icon"></i><p>우리WON뱅킹</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#none" class="btn_close pop_close"><em class="behind">닫기</em></a>
+            </div>
+<script>
+    $('.pop_close').on('click', e => {
+        ui.popupOff('#popup');
+        e.preventDefault();
+    });
+</script>
+        </div>
+        <!--// layer popup -->
+
+    </div>
+    <!--// wrap -->
+
+<script type="text/javascript">
+    ui.popupOn('#popup');
+
+    $('.btn_sch').on('click', e => {
+        ui.popupOn('#popup');
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>

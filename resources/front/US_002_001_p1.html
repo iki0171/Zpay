@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<title>상생 국민지원금 조회 및 신청>정보제공 동의>조회결과 popup</title>
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="inner top_logo">
+                <a href="javascript:void(0);" class="logo_gov"><h1>상생국민지원금 대한민국정부</h1></a>
+                <a href="javascript:void(0);" class="logo_zpay"><h1>zeroPay</h1></a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            
+            <!-- contents -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    
+                    <section class="section">
+                        <div class="sub_grp">
+                            <h2 class="tit_h3">코로나19의 글로벌 유행으로 세계경제와 국내경제가 전례없는 어려움을 겪고 있습니다.<br>
+                                정부는 국민 생활안정과 경제회복을 위하여 국민에게 상생 국민지원금을 지급합니다.
+                            </h2>
+                            <!-- 조회 -->
+                            <div class="cnt_box">
+                                <div class="btn_area mt60">
+                                    <a href="#none" class="btn btn_type01 color3 bg3 btn_sch" id="">조회하기</a>
+                                </div>
+                            </div>
+                            <!--// 조회 -->
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!-- contents -->
+
+        </div>
+        <!--// container -->
+
+        <!-- layer popup -->
+        <div class="pop_wrap on" id="popup">
+            <div class="layer_pop">
+                <div class="pop_container">
+                    <div class="pop_cnt">
+                        <i class="img_msg"></i>
+                        <!-- 대상 일치 -->
+                        <!-- <p class="txt1">귀하는 '상생 국민지원금' 대상자입니다.<br>확인을 누르시면 다음단계로 진행합니다.</p> -->
+
+                        <!-- 기신청결과조회 -->
+                        <!-- <p class="txt1">상생 국민지원금을 이미 신청하였습니다.<br>'결과조회'에서 확인해주세요.</p> -->
+
+                        <!-- 5부제 확인 -->
+                        <!-- <p class="txt1">오늘은 신청일이 아닙니다.<br>출생년도 끝자리를 확인해주세요.</p> -->
+
+                        <!-- 정보불일치 -->
+                        <!-- <p class="txt1">신청 대상자가 아닙니다.<br>국민비서 또는 가까운 주민센터로 문의 주세요.</p> -->
+
+                        <!-- 미성년자 신청여부 -->
+                        <p class="txt2">본 서비스는 만 19세 이상<br>대한민국 성인만 신청이 가능합니다.</p>
+
+                        <div class="btn_area">
+                            <a href="#none" class="btn btn_type02 color3 bg3 pop_close">확인</a>
+                        </div>
+                    </div>
+                </div>
+<script>
+    $('.pop_close').on('click', e => {
+        ui.popupOff('#popup');
+        e.preventDefault();
+    });
+</script>    
+            </div>
+        </div>
+        <!--// layer popup -->
+
+    </div>
+    <!--// wrap -->
+
+<script type="text/javascript">
+    ui.popupOn('#popup');
+
+    $('.btn_sch').on('click', e => {
+        ui.popupOn('#popup');
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>

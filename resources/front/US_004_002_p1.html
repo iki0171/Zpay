@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<title>주소지 변경>변경 주소지 조회 popup</title>
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="inner top_logo">
+                <a href="javascript:void(0);" class="logo_gov"><h1>상생국민지원금 대한민국정부</h1></a>
+                <a href="javascript:void(0);" class="logo_zpay"><h1>zeroPay</h1></a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            
+            <!-- contents -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    
+                    <section class="section">
+                        <form action="">
+                            <fieldset>
+                                <div class="sub_grp">
+                                    <h2 class="tit_h2">주소지 변경</h2>
+                                    <!-- 변경 주소지 조회 -->
+                                    <div class="cnt_box">
+                                        <div class="btn_area mt60">
+                                            <a href="#none" class="btn btn_type01 color3 bg3 btn_sch" id="">변경 주소지 조회</a>
+                                        </div>
+                                    </div>
+                                    <!--// 변경 주소지 조회 -->
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+            <!-- contents -->
+
+        </div>
+        <!--// container -->
+
+        <!-- layer popup -->
+        <div class="pop_wrap on" id="popup">
+            <div class="layer_pop mo_scl">
+                <div class="pop_container">
+                    <div class="pop_cnt">
+                        <i class="img_msg"></i>
+                        <!--  -->
+                        <p class="txt1 mb30"><span class="color5">박진용</span>님, 아래 주소지를 확인 후 변경을 신청합니다.</p>
+                        <ul class="insert_form w60p">
+                            <li class="area_n">
+                                <span class="label"><label for="">변경 전</label></span>
+                                <div class="ele_inp">
+                                    <div><input type="text" value="서울특별시" readonly=""></div>
+                                </div>
+                            </li>
+                            <li class="area_n">
+                                <span class="label"><label for="">변경 후</label></span>
+                                <div class="ele_inp">
+                                    <div><input type="text" value="경기도" readonly=""></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="billiard_list list01 mt40">
+                            <li>변경 등록 주소는 주민등록등본상 현재 거주하고 있는 지역이며, 타 지역으로 임의 변경이 불가능합니다.</li>
+                            <li>사용 주소지를 변경할 시, 기존  등록 주소에서는 사용이 불가하며 변경한 주소에서 사용이 가능합니다.</li>
+                            <li>변경 신청을 접수하시고 난 후, 1일 이후에 지원금 사용이 가능하며 재변경이 불가능합니다.</li>
+                        </ul>
+
+                        <div class="btn_area">
+                            <a href="#none" class="btn btn_type02 color3 bg3">변경신청</a>
+                            <a href="#none" class="btn btn_type02 color1 bg4 pop_close">취소</a>
+                        </div>
+                    </div>
+                </div>
+<script>
+    $('.pop_close').on('click', e => {
+        ui.popupOff('#popup');
+        e.preventDefault();
+    });
+</script>
+            </div>
+        </div>
+        <!--// layer popup -->
+
+    </div>
+    <!--// wrap -->
+
+<script type="text/javascript">
+    ui.popupOn('#popup');
+
+    $('.btn_sch').on('click', e => {
+        ui.popupOn('#popup');
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>

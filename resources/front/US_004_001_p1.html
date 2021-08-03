@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<title>지급신청결과>가족과 함께쓰기>등록결과/신청하기>신청 동의</title>
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+    
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="inner top_logo">
+                <a href="javascript:void(0);" class="logo_gov"><h1>상생국민지원금 대한민국정부</h1></a>
+                <a href="javascript:void(0);" class="logo_zpay"><h1>zeroPay</h1></a>
+            </div>
+        </header>
+        <!--// header -->
+
+        <!-- container -->
+        <div id="container">
+            
+            <!-- contents -->
+            <div id="contents" class="sub">
+                <div class="inner">
+                    
+                    <section class="section">
+                        <div class="sub_grp">
+                            <h2 class="tit_h2">함께쓰기 등록결과/신청하기</h2>
+                            <!-- 신청하기 -->
+                            <div class="cnt_box">
+                                <div class="btn_area">
+                                    <a href="#none" class="btn btn_type01 color3 bg3 btn_sch" id="">신청하기</a>
+                                </div>
+                            </div>
+                            <!--// 신청하기 -->
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!-- contents -->
+
+        </div>
+        <!--// container -->
+
+        <!-- layer popup -->
+        <div class="pop_wrap on" id="popup">
+            <div class="layer_pop max_w1000">
+                <div class="pop_container">
+                    <div class="pop_cnt">
+                        <!-- 동의 -->
+                        <div class="all_chk ml30">
+                            <label class="i_check">
+                                <input type="checkbox" name="" id="" />
+                                <i class="icon"></i><span class="text fs_24">모두동의</span>
+                            </label>
+                        </div>
+                        <div class="agree_box type01">
+                            <dl class="agree_area">
+                                <dt>
+                                    <label class="i_check">
+                                        <input type="checkbox" name="" id="" />
+                                        <i class="icon"></i>
+                                        <span class="text color5">세대원 및 자녀가 아닌 제3자에게 본 상생 국민 지원금을 재판매, 양도 등의 불법행위를 하는 경우 관련 법령에 의거 고발 및 처벌받을 수 있으며 모든책임은 신청자에게 있습니다.</span>
+                                    </label>
+                                </dt>
+                                <dt>
+                                    <label class="i_check">
+                                        <input type="checkbox" name="" id="" />
+                                        <i class="icon"></i>
+                                        <span class="text color5">'자녀와 함께쓰기' 신청 후 승인이 완료되면 신청내용을 변경할 수 없습니다.</span>
+                                    </label>
+                                </dt>
+                                <dt>
+                                    <label class="i_check">
+                                        <input type="checkbox" name="" id="" />
+                                        <i class="icon"></i>
+                                        <span class="text color4">'상생 국민지원금' 법정대리인 동의</span>
+                                    </label>
+                                </dt>
+                                <dd>
+                                    신청자는 '상생 국민지원금' 자녀와 함께쓰기 서비스 신청에 있어 개인정보 보호법 제39조의3 ④항 의거, 만 14세 자녀의 법정대리인(또는 친권자)으로 서비스 신청을 위해 자녀의 아래 개인정보 수집 · 이용 · 제공에 동의합니다.<br>
+                                    <ul class="ul_list">
+                                        <li>- 수집·이용 항목 : 이름</li>
+                                        <li>- 보유·이용 기간 : 상생국민지원금 관련 업무 처리 목적 달성 시까지 (단, 관계 법령에 따라 필요한 경우 해당 법률에서 정한 기간까지)</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!--// 동의 -->
+
+                        <div class="btn_area">
+                            <a href="#none" class="btn btn_type01 color3 bg3">확인</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// layer popup -->
+
+    </div>
+    <!--// wrap -->
+
+<script type="text/javascript">
+    ui.popupOn('#popup');
+
+    $('.btn_sch').on('click', e => {
+        ui.popupOn('#popup');
+        e.preventDefault();
+    });
+</script>
+
+</body>
+</html>
