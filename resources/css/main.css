@@ -120,48 +120,54 @@ footer p { color: #a1a1a1; line-height: 30px; font-size: 15px; font-weight: ligh
 
     .group2 .method { padding: 45px 0; }
     .group2 .method > ul > li + li { margin-top: 25px; padding-top: 25px; }
-    .group2 .method dt { width: 22%; text-align: center; font-size: 19px; }
+    .group2 .method dt { width: 22%; text-align: center; font-size: 18px; }
     .group2 .method dd { width: 75%; margin-left: 10px; }
     .group2 .method dd > p { line-height: 26px; font-size: 18px; }
-    .group2 .method dd > span { display: inline-block; line-height: 18px; font-size: 14px; }
+    .group2 .method dd > span { display: inline-block; line-height: 18px; font-size: 14px; letter-spacing: -.3px; }
 
     .group3 .how_t_use { padding: 45px 0 50px; }
     .group3 .how_t_use .title { text-align: center; font-size: 6.2vw; }
     .group3 .how_t_use .step { display: flex; margin: 35px 0  40px; }
-    .group3 .how_t_use .step .link.mo { margin-right: 30px; zoom: 95%; }
-    .how_t_use .step > ul { flex-wrap: wrap; }
-    .group3 .how_t_use .step > ul > li[class*="st"] { zoom: 90%; }
+    .group3 .how_t_use .step .link.mo { margin-right: 25px; zoom: 65%; }
+    .how_t_use .step > ul { flex-wrap: wrap; align-items: flex-start; }
+    .how_t_use.children .step > ul > li { zoom: 66%; }
+    .group3 .how_t_use .step > ul > li[class*="st"] { zoom: 60%; }
     .group3 .how_t_use .step > ul > li[class*="st"]::after { right: -20%; }
     .group3 .how_t_use .step > ul > li.st02::after { content: none; }
     .group3 .how_t_use .step > ul > li.st03,
     .group3 .how_t_use .step > ul > li.st04 { margin-top: 25px; }
-    .group3 .how_t_use .comment dt { width: 20%; margin-right: 5%; font-size: 18px; }
-    .group3 .how_t_use .comment dd { width: 75%; line-height: normal; font-size: 16px; }
+    .group3 .how_t_use .comment li + li { margin-top: 25px; }
+    .group3 .how_t_use .comment dt { width: 20%; margin-right: 5%; padding-top: 4px; font-size: 18px; }
+    .group3 .how_t_use .comment dd { width: 75%; line-height: normal; font-size: 14px; }
 
     .group4 .how_t_use.children { padding: 50px 0; }
-    .group4 .children .title { font-size: 7.3vw; line-height: 6.8vh; text-align: center; }
+    .group4 .children .title { font-size: 7.3vw; line-height: 5.5vh; text-align: center; }
     .group4 .how_t_use .step { margin: 35px 0; }
     .children .step > ul > li:nth-child(4),
     .children .step > ul > li:nth-child(5),
     .children .step > ul > li:nth-child(6) { margin-top: 25px; }
-    .group4 .children .step > ul > li:nth-child(3)::after { content: none; }
-    .group4 .how_t_use.children p.txt { height: auto; padding: 15px 22px; border-radius: 37px; text-align: left; line-height: 22px; }
-    .group4 .how_t_use.children .comment dt { width: 42%; margin-right: 5%; font-size: 23px; }
-    .group4 .how_t_use.children .comment dd { width: 53%; line-height: normal; font-size: 18px; }
-    .group4 .how_t_use.children .ol_list > li { font-size: 18px; }
+    /* .group4 .children .step > ul { justify-content: space-evenly; } */
+    .group4 .children .step > ul > li::after { content: none; }
+    .group4 .children .step [class*="i_img"] { width: 168px; }
+    .group4 .children .step .i_img03 { width: 141px; }
+    .group4 .children p.txt { height: auto; padding: 15px 22px; border-radius: 37px; text-align: left; line-height: normal; font-size: 14px; }
+    .group4 .how_t_use.children .comment  > ul > li + li { margin-top: 25px; }
+    .group4 .how_t_use.children .comment dt { width: 41%; margin-right: 4%; font-size: 16px; }
+    .group4 .how_t_use.children .comment dd { width: 55%; line-height: normal; font-size: 14px; }
+    .group4 .how_t_use.children .ol_list > li { font-size: 14px; }
 
     .group5 .zmap { padding: 30px 0; }
-    .group5 .zmap .icon_app { width: 86px; height: 83px; background-size: 86px auto; }
-    .group5 .zmap p.text { margin-left: 28px;  font-size: 22px; }
+    .group5 .zmap .icon_app { width: 52px; height: 51px; background-size: 52px auto; }
+    .group5 .zmap p.text { margin-left: 20px;  font-size: 16px; }
 
-    .group6 { margin: 35px 0; }
-    .group6 .callcenter .tit { font-size: 18px; }
-    .group6 .callcenter > ul > li:last-child { margin-left: 25px; }
-    .group6 .callcenter > ul > li p { font-size: 20px; }
-    .group6 .callcenter > ul > li span { font-size: 16px; }
+    .group6 { margin: 30px 0; }
+    .group6 .callcenter .tit { margin: 10px 0 6px; font-size: 14px; }
+    .group6 .callcenter > ul > li:last-child { margin-left: 14px; }
+    .group6 .callcenter > ul > li p { font-size: 14px; }
+    .group6 .callcenter > ul > li span { font-size: 12px; }
 
     footer { padding: 20px 0; }
-    footer p { line-height: normal; }
+    footer p { line-height: normal; font-size: 13px; }
 }
 
 @media screen and (max-width:375px) {
