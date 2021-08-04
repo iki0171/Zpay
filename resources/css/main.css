@@ -44,7 +44,7 @@
 .how_t_use .step > ul > li.st03 .i_img { background-position: -625px 0; }
 .how_t_use .step > ul > li.st04 .i_img { background-position: -837px 0; }
 .how_t_use .step > ul > li > strong { margin: 12px 0 6px; color: #edf932; font-size: 20px; font-weight: 700; }
-.how_t_use .step > ul > li > span { color: #fff; line-height: 22px; font-size: 18px; font-weight: 400; }
+.how_t_use .step > ul > li > span { color: #fff; line-height: normal; font-size: 18px; font-weight: 400; }
 
 .how_t_use .comment * { color: #fff; letter-spacing: -.5px; }
 .how_t_use .comment li + li { margin-top: 55px; }
