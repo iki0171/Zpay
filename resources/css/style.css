@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.inner { position: relative; max-width: 1000px; margin: 0 auto; }
+.inner { position: relative; max-width: 1030px; margin: 0 auto; padding: 0 15px; }
 .mo { display: none; }
 .pc { display: block; }
 
@@ -148,7 +148,6 @@ body[data-layerpop=true]::after  { position: fixed; top: 0; right: 0; bottom: 0;
 body[data-layerpop=true]::after{ z-index: 1999; }
 
 @media screen and (max-width:1029px) {
-    .inner { padding: 0 15px; }
     .sub_grp { /*width: calc( 100% - 30px );*/ margin: 0 auto; }
 }
 
