@@ -165,7 +165,7 @@ footer p { color: #a1a1a1; line-height: 30px; font-size: 15px; font-weight: ligh
     footer p { line-height: 3vw; font-size: 1.5vw;  letter-spacing: -0.03vw; }
 }
 
-/****************** Mobile Device ******************/
+/************* Mobile Device *************/
 @media all and (max-width:640px) {
     /* group1 */
     .visual_area { margin: 7vw 0 10vw; }

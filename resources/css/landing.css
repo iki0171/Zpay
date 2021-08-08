@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body.gray { background: #f0eeee; }
+
+/* header */
+.landing_wrap > header { height: 90px; border: 0; }
+.landing_wrap > header .landing_logo { position: relative; max-width: 1520px; margin: 0 auto; padding: 0 15px; }
+.landing_logo { display: flex; justify-content: space-between; }
+.landing_logo > a { height: 90px; background-size: contain; }
+.landing_logo .logo_gov { width: 292px; background: url('../images/logo_gov02.png') no-repeat; background-position: 0 -3px; background-size: contain; }
+.landing_logo .logo_zpay { background-position: 11px -5px; }
+
+/* contents */
+.main_landing .inner { max-width: 1024px; height: calc( 100vh - 90px ); padding: 0; }
+
+.left_text { position: relative; height: 830px; z-index: 10; }
+.left_text [class*="txt_"] { margin-top: 20px; }
+.left_text .title { padding-top: 20px; font-family: 'GongGothicMedium'; }
+.left_text .title strong { color: #134bb5; font-size: 80px; }
+.left_text .title p { color: #3c3c3c; font-size: 50px; font-weight: 600; }
+.left_text .txt_small,
+.left_text .txt_medium .txt3 { font-size: 22px; }
+.left_text .txt_small { letter-spacing: -.3px; }
+.left_text .txt_small .txt3 { color: #d9235f; font-weight: 700; }
+.left_text .txt_small p { line-height: 30px; }
+.left_text .txt_small p + p { margin-top: 12px; }
+.left_text .txt_medium { margin-bottom: 20px; letter-spacing: -1px; }
+.left_text .txt_medium p + p { margin-top: 8px; }
+.left_text .txt_medium .txt1,
+.left_text .txt_medium .txt2 { line-height: 41px; font-size: 34px; }
+.left_text .txt_medium .txt1 { font-weight: 700; }
+.left_text .txt1 { color: #3c3c3c; }
+.left_text .txt2 { color: #134bb5; font-weight: 700; }
+
+.right_model .img_pc { position: absolute; right: -142px; bottom: 0; width: 594px; height: 989px; background: url('../images/model_01_pc.png') no-repeat; background-size: contain; }
+.right_model.type02 .img_pc { width: 620px; height: 1006px; background: url('../images/model_02_pc.png') no-repeat; background-size: contain; }
+.right_model .img_mo { display: none; }
+
+.cnt_foot { position: absolute; bottom: 0; width: 100%; height: 168px; background: #cc2159; }
+.cnt_foot.type02 { background: #113f9e; }
+.cnt_foot p { position: relative; max-width: 1024px; height: 168px; margin: 0 auto; padding-top: 25px; color: #fff; font-size: 46px; font-weight: 300; letter-spacing: -1.5px; }
+
+@media all and (min-height:1366px) {
+    .right_model .img_pc { bottom: 0 !important; }
+}
+
+@media all and (max-height:1090px) {
+    .main_landing .inner { height: 832px; }
+    .right_model .img_pc { bottom: -168px; }
+    .cnt_foot { position: relative; }
+}
+
+@media all and (max-width:1350px) {
+    .landing_wrap > header { height: 6.6667vw; }
+    .landing_wrap > header .landing_logo { max-width: 112.5926vw; }
+    .landing_logo > a { height: 6.6667vw; }
+    .landing_logo .logo_gov { width: 21.6296vw; background-position: 0 -0.2222vw; }
+    .landing_logo .logo_zpay { background-position: 0.8148vw -0.3704vw; }
+
+    .main_landing .inner { max-width: 75.8519vw; height: calc( 100vh - 6.6667vw ); }
+
+    .left_text {  height: 61.4815vw;  }
+    .left_text [class*="txt_"] { margin-top: 1.4815vw; }
+    .left_text .title { padding-top: 1.4815vw;  }
+    .left_text .title strong {  font-size: 5.9259vw; }
+    .left_text .title p {  font-size: 3.7037vw;  }
+    .left_text .txt_small,
+    .left_text .txt_medium .txt3 { font-size: 1.6296vw; }
+    .left_text .txt_small { letter-spacing: -0.0222vw; }
+    .left_text .txt_small p { line-height: 2.2222vw; }
+    .left_text .txt_small p + p { margin-top: 0.8889vw; }
+    .left_text .txt_medium { margin-bottom: 1.4815vw; letter-spacing: -0.037vw; }
+    .left_text .txt_medium p + p { margin-top: 0.5926vw; }
+    .left_text .txt_medium .txt1,
+    .left_text .txt_medium .txt2 { line-height: 3.0370vw; font-size: 2.5185vw; }
+
+    .right_model .img_pc { right: -10.5185vw; bottom: -12.4444vw; width: 44vw; height: 73.2593vw; }
+    .right_model.type02 .img_pc { width: 45.9259vw; height: 74.5185vw; }
+
+    .cnt_foot { height: 12.4444vw; }
+    .cnt_foot p { max-width: 75.8519vw; height: 12.4444vw; padding-top: 1.8519vw;  font-size: 3.4074vw; letter-spacing: -0.1111vw; }
+
+}
+
+/************* Mobile Device *************/
+@media all and (max-width:640px) {
+    .landing_wrap > header { height: 14.0625vw; }
+    .landing_wrap > header .landing_logo { max-width: 237.5vw; padding: 0 2.3438vw; }
+    .landing_logo > a { height: 14.0625vw; }
+    .landing_logo .logo_gov { width: 45.625vw; background-position: 0 -0.4688vw; }
+    .landing_logo .logo_zpay { width: 18.4375vw; background-position: 1.7188vw -0.7813vw; }
+
+    .main_landing .inner { max-width: 160vw; height: calc( 100vh - 14.0625vw ); padding: 0 2.3438vw; }
+
+    .left_text { height: 129.6875vw; }
+    .left_text [class*="txt_"] { margin-top: 3.125vw; }
+    .left_text .title { padding-top: 3.125vw; }
+    .left_text .title strong { font-size: 8.4vw; }
+    .left_text .title p {  font-size: 6.1vw; }
+    .left_text .txt_small,
+    .left_text .txt_medium .txt3 { font-size: 3.4vw; }
+    .left_text .txt_small { letter-spacing: -0.1vw; }
+    .left_text .txt_small p { line-height: 4.3vw; }
+    .left_text .txt_small p + p { margin-top: 1.875vw; }
+    .left_text .txt_medium { margin-bottom: 3.125vw; letter-spacing: -0.0781vw; }
+    .left_text .txt_medium p + p { margin-top: 1.25vw; }
+    .left_text .txt_medium .txt1,
+    .left_text .txt_medium .txt2 { line-height: 5vw; font-size: 4vw; }
+
+    .right_model .img_pc { display: none; }
+    .right_model .img_mo { display: block; position: absolute; right: 0; bottom: 0; width: 75.4688vw; height: 114.2188vw; background: url('../images/model_01_mo.png') no-repeat; background-size: contain; }
+    .right_model.type02 .img_mo { width: 68.6vw; height: 108.1875vw; background: url('../images/model_02_mo.png') no-repeat; background-size: contain; }
+
+    .cnt_foot { height: 26.25vw; }
+    .cnt_foot p { max-width: 160vw; height: 26.25vw; padding: 5.9063vw 2.3438vw 0; line-height: 7.0625vw; font-size: 5.6vw;  letter-spacing: -0.2344vw; }
+
+}
