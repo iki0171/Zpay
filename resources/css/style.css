@@ -289,6 +289,9 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 .sch_box > ul > li .txt_inp input::placeholder { color: #9fadd6 !important; }
 .sch_box > ul > li .txt_inp input::-webkit-input-placeholder { color: #9fadd6 !important; }
 .sch_box > ul > li .txt_inp input:-ms-input-placeholder { color: #9fadd6 !important; }
+.sch_box > ul > li .txt_inp input:focus::placeholder { color: #fff !important; }
+.sch_box > ul > li .txt_inp input:focus::-webkit-input-placeholder { color: #fff !important; }
+.sch_box > ul > li .txt_inp input:focus:-ms-input-placeholder { color: #fff !important; }
 /* select style */
 .sch_box .sch_list { display: none; position: absolute; left: 0; bottom: -166px; width: 100%; padding: 10px 20px; background: #0f3399; z-index: 20; }
 .sch_box .sch_list.on { display: block; }
@@ -349,9 +352,20 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 .banner .text { margin-bottom: 8px; font-size: 24px; color: #000; }
 .banner .text strong { color: #144fc3; font-weight: normal; }
 
+/* 채널 */
+.section6 { border-top: 1px solid #e5e5e5; }
+.channel { padding: 35px 0; }
+.channel > ul { display: flex; justify-content: center; }
+.channel > ul > li + li { margin-left: 50px; padding-left: 50px; border-left: 1px solid #e5e5e5; }
+.channel > ul > li > a { display: inline-block; height: 40px; background: url('../images/channel_logo.png') no-repeat; color: transparent; line-height: 40px; text-align: center; }
+.channel > ul > li.item1 > a { width: 126px; background-position: 0 0; }
+.channel > ul > li.item2 > a { width: 78px; background-position: -130px 0; }
+.channel > ul > li.item3 > a { width: 130px; background-position: -210px 0; }
+.channel > ul > li.item4 > a { width: 108px; background-position: -350px 0; }
+
 /* contact */
 .section3 { border-top: 1px solid #e5e5e5; }
-.contact { margin: 60px 0 70px; }
+.contact { padding: 60px 0 70px; }
 .contact dl { display: flex; }
 .contact dt { width: 170px; font-size: 25px; font-weight: 600; letter-spacing: -.5px; }
 .contact dd { width: calc( 100% - 170px ); padding-top: 6px; }
@@ -366,4 +380,5 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 
 /* footer */
 .foot_sch { border-top: 0; background: #f0f0f0; text-align: center; }
-.foot_sch p { color: #787878; line-height: 20px; letter-spacing: -.3px; }
+.foot_sch .txt1 { color: #787878; line-height: 20px; letter-spacing: -.3px; }
+.foot_sch .txt2 { color: #b9b9b9; }
