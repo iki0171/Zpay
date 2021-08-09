@@ -286,9 +286,9 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 .sch_box > ul > li .txt_inp input { height: 37px; padding: 0; border-bottom: 3px solid #9fadd6; border-radius: 0; background: #0f3399; color: #9fadd6; font-size: 16px; }
 .sch_box > ul > li .txt_inp input:focus,
 .sch_box > ul > li .txt_inp input.on { border-bottom: 3px solid #edf932; }
-.sch_box > ul > li .txt_inp input::placeholder { color: #fff; }
-.sch_box > ul > li .txt_inp input::-webkit-input-placeholder { color: #fff; }
-.sch_box > ul > li .txt_inp input:-ms-input-placeholder { color: #fff; }
+.sch_box > ul > li .txt_inp input::placeholder { color: #9fadd6 !important; }
+.sch_box > ul > li .txt_inp input::-webkit-input-placeholder { color: #9fadd6 !important; }
+.sch_box > ul > li .txt_inp input:-ms-input-placeholder { color: #9fadd6 !important; }
 /* select style */
 .sch_box .sch_list { display: none; position: absolute; left: 0; bottom: -166px; width: 100%; padding: 10px 20px; background: #0f3399; z-index: 20; }
 .sch_box .sch_list.on { display: block; }

@@ -180,7 +180,7 @@ footer p { color: #a1a1a1; line-height: 30px; font-size: 15px; font-weight: ligh
     .visual .left .desc .txt3 {  font-size: 3vw; }
     .visual .right.pc { display: none; }
     .visual_area .btn_area.mo { display: flex; }
-    .visual_area .btn_area .btn_type01 { width: 39.0625vw; height: 12.5vw; line-height: 12.5vw; font-size: 4.6875vw; }
+    .visual_area .btn_area .btn_type01 { width: 39.0625vw; min-width: auto; height: 12.5vw; line-height: 12.5vw; font-size: 4.6875vw; }
     .visual_area .btn_area.mt50 .btn_type05 { width: 24.0625vw; height: 10.9375vw; border: 0.1563vw solid #1450c3; border-radius: 5.4688vw;  line-height: 10.9375vw; font-size: 4.3750vw; }
     
     /* group2 */
