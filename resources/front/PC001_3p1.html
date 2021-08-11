@@ -9,7 +9,7 @@
 <meta property="og:title" content="">
 <meta property="og:description" content="">
 <meta property="og:image" content="">
-<title>상생국민지원금 사용처 안내 - 검색결과</title>
+<title>상생국민지원금 사용처 안내 - 지자체 콜센터안내 팝업</title>
 <link rel="stylesheet" type="text/css" href="../css/default.css" />
 <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
@@ -116,82 +116,17 @@
                                         <td>레스토랑</td>
                                         <td>02-515-1117</td>
                                     </tr>
-                                    <tr>
-                                        <td>스페인클럽</td>
-                                        <td>서울특별시 강남구 압구정로10길 26(신사동) 1층</td>
-                                        <td>레스토랑</td>
-                                        <td>02-515-1117</td>
-                                    </tr>
-                                    <tr>
-                                        <td>닥터맘 강남서초</td>
-                                        <td>서울특별시 강남구 논현로72길 33(역삼동) 305호</td>
-                                        <td>유료직업소개소</td>
-                                        <td>02-515-1117</td>
-                                    </tr>
-                                    <!-- 검색결과 없음 -->
-                                    <tr class="tr_no">
-                                        <td colspan="4">찾으시는 가맹점이 존재하지 않습니다. 다시 검색해 주세요.</td>
-                                    </tr>
-                                    <!--// 검색결과 없음 -->
                                 </tbody>
                             </table>
                             <div class="local_gov">
                                 <p class="txt"><em>* </em>가맹점정보의 수정이 필요한 경우 지자체 콜센터로 연락주시기 바랍니다.</p>
-                                <a href="" class="btn_link"><i class="icon"></i>지자체 콜센터</a>
+                                <a href="" class="btn_link pop_open"><i class="icon"></i>지자체 콜센터</a>
                             </div>
                         </div>
 
-                        <!-- 페이징 -->
-                        <div class="pagination">
-                            <a href="#none" class="first"><i class="icon_arr"></i><span class="behind">처음</span></a>
-                            <a href="#none" class="prev"><i class="icon_arr"></i><span class="behind">이전</span></a>
-                            <strong class="num current" title="현재페이지"><span>1</span></strong>
-                            <a href="#none" class="num">2</a>
-                            <a href="#none" class="num">3</a>
-                            <a href="#none" class="num">4</a>
-                            <a href="#none" class="next"><i class="icon_arr"></i><span class="behind">다음</span></a>
-                            <a href="#none" class="last"><i class="icon_arr"></i><span class="behind">끝</span></a>
-                        </div>
-                        <!--// 페이징 -->
                     </div>
                 </section>
                 <!--// section4 검색결과 -->
-
-                <!-- section2 -->
-                <section class="section2">
-                    <div class="inner">
-                        <ul class="banner">
-                            <li class="left">
-                                <a href="javascript:void(0);">
-                                    <p class="text"><span>우리동네</span><br>국민지원금 사용처를<br><strong>한 번에 확인</strong>하세요!</p>
-                                    <span class="btn_type09">지맵 다운로드</span>
-                                </a>
-                            </li>
-                            <li class="right">
-                                <a href="javascript:void(0);">
-                                    <p class="text"><span>사장님~ 우리가게가</span><br><strong>국민지원금 사용처</strong>인지<br>궁금하세요?</p>
-                                    <span class="btn_type09">지금 확인하기</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!--// section2 -->
-
-                <!-- section6 -->
-                <section class="section6">
-                    <div class="inner">
-                        <div class="channel">
-                            <ul>
-                                <li class="item1"><a href="" target="_blank" title="새창열림">행정안전부</a></li>
-                                <li class="item2"><a href="" target="_blank" title="새창열림">제로페이</a></li>
-                                <li class="item3"><a href="" target="_blank" title="새창열림">경기지역화폐</a></li>
-                                <li class="item4"><a href="" target="_blank" title="새창열림">온통대전</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!--// section6 -->
 
             </div>
             <!-- contents -->
@@ -199,17 +134,90 @@
         </div>
         <!--// container -->
 
-        <!-- footer -->
-        <footer class="foot_sch">
-            <div class="inner">
-                <p class="txt1">30128 세종특별자치시 정부2청사로 13(나성동) / 30116 세종특별자치시 한누리대로 411(어진동) / 30116 세종특별자치시 가름로 143(어진동)</p>
-                <p class="txt1">정부민원안내콜센터 국번없이110(무료), 행정안전부 콜센터 02-2100-3399(월~금 9:00~18:00, 공휴일 제외) / 팩스 044-204-8911(근무시간 외) 당직실 044-205-1600</p>
-                <p class="txt2">ⓒ Ministry of the Interior and Safety. All rights reserved.</p>
+        <!-- layer popup -->
+        <div class="pop_wrap on" id="popup">
+            <div class="layer_pop app w790">
+                <div class="pop_inner">
+                    <div class="pop_tit02">
+                        <strong>지자체 콜센터 안내</strong>
+                    </div>
+                    <div class="pop_container">
+                        <div class="table_col type02 type_scroll ">
+                            <table>
+                                <caption>지자체 콜센터 목록입니다.</caption>
+                                <colgroup>
+                                    <col width="28%">
+                                    <col width="36%">
+                                    <col width="">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>지역</th>
+                                        <th>전화번호</th>
+                                        <th>전화상담</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="table_scroll">
+                                <table>
+                                    <colgroup>
+                                        <col width="28%">
+                                        <col width="36%">
+                                        <col width="">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>경기도</td>
+                                            <td>경기도 콜센터 031-120</td>
+                                            <td>연중무휴 24시간</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경기도</td>
+                                            <td>경기도 콜센터 031-120</td>
+                                            <td>연중무휴 24시간</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경기도</td>
+                                            <td>경기도 콜센터 031-120</td>
+                                            <td>연중무휴 24시간</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경기도</td>
+                                            <td>경기도 콜센터 031-120</td>
+                                            <td>연중무휴 24시간</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="btn_area mt50">
+                            <a href="#" class="btn_type10">확인</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#none" class="btn_close type02 pop_close"><em class="behind">닫기</em></a>
             </div>
-        </footer>
-        <!--// footer -->
+<script>
+    $('.pop_close').on('click', e => {
+        ui.popupOff('#popup');
+        e.preventDefault();
+    });
+</script>
+        </div>
+        <!--// layer popup -->
+
     </div>
     <!--// wrap -->
+
+<script type="text/javascript">
+    ui.popupOn('#popup');
+
+    $('.pop_open').on('click', e => {
+        ui.popupOn('#popup');
+        e.preventDefault();
+    });
+</script>
 
 </body>
 </html>
