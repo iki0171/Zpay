@@ -248,7 +248,7 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 
 /* 국민지원금 사용처 안내 */
 .searching_wrap header { height: 70px; border-bottom: 0; }
-.searching_wrap.franchise header { background: #14aec3; }
+/* .searching_wrap.franchise header { background: #14aec3; } */
 /* .searching_wrap header a { height: auto; } */
 .sch_logo { display: flex; flex-flow: row; max-width: 1024px; margin: 0 auto; justify-content: space-between; align-items: center; }
 .sch_logo > ul { display: flex; flex-flow: row; align-items: center; }
@@ -280,15 +280,12 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 .sch_area .title dt { font-size: 24px; font-weight: 300; }
 .sch_area .title dd { font-size: 60px; letter-spacing: -2px; }
 .sch_box { background: #0f3399; }
-.sch_box > ul { display: flex; flex-flow: row; height: 120px; }
-.sch_box > ul > li { position: relative; width: 202px; }
-.sch_box > ul > li .tit { position: absolute; top: 30px; left: 22px; color: #fff; font-weight: 300; }
-.select { display: block; width: 100%; height: 120px; padding: 52px 19px 36px; border: 2px solid #0f3399; background-color: #0f3399; background-image: url('../images/sch_arr_off.png'); background-position: left 22px bottom 26px; background-repeat: no-repeat; color: #9fadd6; font-family: 'NotoSansKR'; font-size: 16px; letter-spacing: -.5px; }
-.select:focus,
-.select.on { border: 2px solid #edf932; border-bottom: 2px solid #0f3399; background-image: url('../images/sch_arr_on.png'); color: #fff; }
-.select:focus strong,
-.select.on  strong { color: #edf932; }
-/* .select:invalid { color: #edf932; } */
+.sch_box > .step { display: flex; flex-flow: row; height: 120px; position: relative; z-index: 10;  }
+.sch_box > .step > li { position: relative; width: 202px; }
+.sch_box > .step > li .tit { position: absolute; top: 30px; left: 22px; color: #fff; font-weight: 300; }
+.sch_box > .step > li .select { display: block; width: 100%; height: 120px; padding: 52px 19px 36px; border: 2px solid #0f3399; background-color: #0f3399; background-image: url('../images/sch_arr_off.png'); background-position: left 22px top 86px; background-repeat: no-repeat; color: #9fadd6; font-family: 'NotoSansKR'; font-size: 16px; letter-spacing: -.5px; }
+.sch_box > .step > li.on .select { border: 2px solid #edf932; border-bottom: none; padding-bottom: 38px; background-image: url('../images/sch_arr_on.png'); color: #fff; }
+.sch_box > .step > li.on strong { color: #edf932; }
 .sch_box [class*="depth"] { position: absolute; top: 120px; height: 220px; padding: 4px 20px 10px; background: #0f3399; overflow-y: scroll; z-index: 10; }
 .sch_box .depth2 { left: 0; width: 100%; border-bottom: 2px solid #edf932; border-left: 2px solid #edf932; }
 .sch_box .depth2 li + li { border-top: 1px solid #7a93d8; }
@@ -316,11 +313,14 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 .sch_box > ul > li .txt_inp input:focus::placeholder { color: #fff !important; }
 .sch_box > ul > li .txt_inp input:focus::-webkit-input-placeholder { color: #fff !important; }
 .sch_box > ul > li .txt_inp input:focus:-ms-input-placeholder { color: #fff !important; }
-/* select style */
-.sch_box .sch_list { display: none; position: absolute; left: 0; bottom: -166px; width: 100%; padding: 10px 20px; background: #0f3399; z-index: 20; }
-.sch_box .sch_list.on { display: block; }
-.sch_box .sch_list a { color: #fff; }
-.sch_box .sch_list a:hover { color: #edf932; }
+
+.sch_box > ul > li .depth2,
+.sch_box > ul > li .depth3 { display: none; }
+.sch_box > ul > li.on .depth2 { display: block; }
+.sch_box > ul > li.on .depth3 { display: flex; }
+
+.area_close{display: none; position:fixed; left:0; right:0; top:70px; bottom:0; z-index:9;}
+.area_close.on{display: block;}
 
 /* table style */
 .table_col { position: relative; }
@@ -349,9 +349,10 @@ body[data-layerpop=true]::after{ z-index: 1999; }
 
 /* 공지사항 */
 .notice { margin-top: 80px; border-top: 3px solid #000; }
-.notice .panel { padding: 50px 0; border-bottom: 1px solid #dbdbdb; }
-.notice .panel .tit { color: #000; font-size: 24px; }
-.notice .panel .cont { margin: 40px 0; color: #666; font-size: 18px; }
+.notice .panel { padding: 40px 0; border-bottom: 1px solid #dbdbdb; }
+.notice .panel .tit > a { color: #000; font-size: 24px; }
+.notice .panel .tit > a:hover { text-decoration: underline; }
+.notice .panel .cont { margin: 10px 0; color: #666; font-size: 18px; }
 .notice .panel > ul { display: flex; justify-content: space-between; }
 .notice .panel > ul > li { font-weight: 300; }
 .notice .panel .date { color: #666; font-size: 16px; }
