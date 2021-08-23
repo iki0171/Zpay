@@ -197,6 +197,7 @@ body[data-layerpop=true]::after{ z-index: 1999; }
     .form_inner { padding: 3.3333vw; border-radius: 1.3333vw; }
     .insert_form > li { padding-left: 2.9333vw; }
     .insert_form > li::before { left: 0; top: 2.9333vw; width: 0.6667vw; height: 0.6667vw; }
+    .insert_form > li.status::before { top: 3.7333vw; }
     .insert_form > li + li { margin-top: 2.6667vw; }
     .insert_form .label { min-width: 24vw; line-height: 6.6667vw; font-size: 3.7333vw; }
     .insert_form .status .label { font-size: 4.2667vw; }
