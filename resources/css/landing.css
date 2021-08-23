@@ -3,12 +3,12 @@
 body.gray { background: #f0eeee; }
 
 /* header */
-.landing_wrap > header { height: 90px; border: 0; }
+.landing_wrap > header { height: 90px; border: 0; background: #f0eeee; }
 .landing_wrap > header .landing_logo { position: relative; max-width: 1520px; margin: 0 auto; padding: 0 15px; }
 .landing_logo { display: flex; justify-content: space-between; }
 .landing_logo > a { height: 90px; background-size: contain; }
-.landing_logo .logo_gov { width: 292px; background: url('../images/logo_gov02.png') no-repeat; background-position: 0 -3px; background-size: contain; }
-.landing_logo .logo_zpay { background-position: 11px -5px; }
+.landing_logo .logo_gov { width: 556px; background: url('../images/logo_gov.png') no-repeat; background-size: 540px auto; }
+/* .landing_logo .logo_zpay { background-position: 11px -5px; } */
 
 /* contents */
 .main_landing .inner { max-width: 1024px; height: calc( 100vh - 90px ); padding: 0; }
@@ -36,7 +36,7 @@ body.gray { background: #f0eeee; }
 .right_model.type02 .img_pc { width: 620px; height: 1006px; background: url('../images/model_02_pc.png') no-repeat; background-size: contain; }
 .right_model .img_mo { display: none; }
 
-.cnt_foot { position: absolute; bottom: 0; width: 100%; height: 168px; background: #cc2159; mix-blend-mode: multiply; }
+.cnt_foot { position: absolute; bottom: 0; width: 100%; height: 168px; background: #cc2159; /*mix-blend-mode: multiply;*/ }
 .cnt_foot.type02 { background: #113f9e; }
 .cnt_foot p { position: relative; max-width: 1024px; height: 168px; margin: 0 auto; padding-top: 25px; color: #fff; font-size: 46px; font-weight: 300; letter-spacing: -1.5px; }
 
@@ -54,8 +54,7 @@ body.gray { background: #f0eeee; }
     .landing_wrap > header { height: 6.6667vw; }
     .landing_wrap > header .landing_logo { max-width: 112.5926vw; }
     .landing_logo > a { height: 6.6667vw; }
-    .landing_logo .logo_gov { width: 21.6296vw; background-position: 0 -0.2222vw; }
-    .landing_logo .logo_zpay { background-position: 0.8148vw -0.3704vw; }
+    .landing_logo .logo_gov { width: 41.1852vw; background-size: 40.0000vw auto; }
 
     .main_landing .inner { max-width: 75.8519vw; height: calc( 100vh - 6.6667vw ); }
 
@@ -82,36 +81,33 @@ body.gray { background: #f0eeee; }
 
 }
 
-/************* Mobile Device *************/
-@media all and (max-width:640px) {
-    .landing_wrap > header { height: 14.0625vw; }
-    .landing_wrap > header .landing_logo { max-width: 237.5vw; padding: 0 2.3438vw; }
-    .landing_logo > a { height: 14.0625vw; }
-    .landing_logo .logo_gov { width: 45.625vw; background-position: 0 -0.4688vw; }
-    .landing_logo .logo_zpay { width: 18.4375vw; background-position: 1.7188vw -0.7813vw; }
+@media all and (max-width:750px) {
+    .landing_wrap > header { height: 13vw; padding-top: 1vw; }
+    .landing_wrap > header .landing_logo,
+    .main_landing .inner { max-width: 100%; height: auto; padding: 0 4vw; }
+    .landing_logo > a { height: 12vw; }
+    .landing_logo .logo_gov { width: 68.8vw; background-size: 68vw auto; }
 
-    .main_landing .inner { max-width: 160vw; height: calc( 100vh - 14.0625vw ); padding: 0 2.3438vw; }
-
-    .left_text { height: 129.6875vw; }
-    .left_text [class*="txt_"] { margin-top: 3.125vw; }
-    .left_text .title { padding-top: 3.125vw; }
-    .left_text .title strong { font-size: 8.4vw; }
-    .left_text .title p {  font-size: 6.1vw; }
+    .left_text { height: auto; }
+    .left_text [class*="txt_"] { margin-top: 2.6667vw; }
+    .left_text .title { padding-top: 6.6667vw; }
+    .left_text .title strong { font-size: 8vw; }
+    .left_text .title p { margin-top: 1.0667vw; font-size: 6vw; }
     .left_text .txt_small,
-    .left_text .txt_medium .txt3 { font-size: 3.4vw; }
-    .left_text .txt_small { letter-spacing: -0.1vw; }
-    .left_text .txt_small p { line-height: 4.3vw; }
-    .left_text .txt_small p + p { margin-top: 1.875vw; }
-    .left_text .txt_medium { margin-bottom: 3.125vw; letter-spacing: -0.0781vw; }
-    .left_text .txt_medium p + p { margin-top: 1.25vw; }
+    .left_text .txt_medium .txt3 { line-height: normal; font-size: 2.9333vw; }
+    .left_text .txt_small { letter-spacing: -.5px; }
+    .left_text .txt_small p { line-height: 3.7333vw; }
+    .left_text .txt_small p + p { margin-top: 2.1333vw; }
+    .left_text .txt_medium { margin-bottom: 18.6667vw; }
+    .left_text .txt_medium p + p { margin-top: 2.1333vw; }
     .left_text .txt_medium .txt1,
-    .left_text .txt_medium .txt2 { line-height: 5vw; font-size: 4vw; }
+    .left_text .txt_medium .txt2 { line-height: 4.8vw; font-size: 4vw; }
+    .left_text .txt_medium .txt3 { line-height: 3.7333vw; }
 
     .right_model .img_pc { display: none; }
-    .right_model .img_mo { display: block; position: absolute; right: 0; bottom: 0; width: 75.4688vw; height: 114.2188vw; background: url('../images/model_01_mo.png') no-repeat; background-size: contain; }
-    .right_model.type02 .img_mo { width: 68.6vw; height: 108.1875vw; background: url('../images/model_02_mo.png') no-repeat; background-size: contain; }
+    .right_model .img_mo { display: block; position: absolute; right: 0; bottom: -18.6667vw; width: 66.6667vw; height: 97.3333vw; background: url('../images/model_01_mo.png') no-repeat; background-size: contain; }
+    .right_model.type02 .img_mo { bottom: -18.9333vw; width: 65.6vw; height: 103.1875vw; background: url('../images/model_02_mo.png') no-repeat; background-size: contain; }
 
-    .cnt_foot { height: 26.25vw; }
-    .cnt_foot p { max-width: 160vw; height: 26.25vw; padding: 5.9063vw 2.3438vw 0; line-height: 7.0625vw; font-size: 5.6vw;  letter-spacing: -0.2344vw; }
-
+    .cnt_foot { height: 22.6667vw; padding: 0 4vw; }
+    .cnt_foot p { max-width: 100%; height: 22.6667vw; padding-top: 4vw; line-height: 6.9333vw; font-size: 5.3333vw; }
 }
