@@ -39,7 +39,7 @@
 .sch_form .form_list > li a.select { background-image: url('../images/icon_select.png'); background-repeat: no-repeat; background-size: 3.0667vw auto; background-position: top 7.0667vw right; }
 .sch_form .form_list > li a.select { display: inline-block; width: 100%; line-height: 16vw; }
 .sch_form .form_list > li a.select .txt_sido { margin-right: 5.3333vw; }
-.sch_form .form_list > li .inp_sch { padding-right: 8vw; background: url('../images/input_sch.png') no-repeat; background-position: right center; }
+.sch_form .form_list > li .inp_sch { padding-right: 8vw; background: url('../images/input_sch.png') no-repeat; background-size: 5.2vw auto; background-position: right center; }
 .sch_form .form_list > li .inp_sch::placeholder { color: #0f3399 !important; }
 .sch_form .form_list > li .inp_sch::-webkit-input-placeholder { color: #0f3399 !important; }
 .sch_form .form_list > li .inp_sch:-ms-input-placeholder { color: #0f3399 !important; }
