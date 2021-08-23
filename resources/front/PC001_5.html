@@ -22,13 +22,15 @@
         <!-- header -->
         <header>
             <div class="sch_logo">
-                <ul class="left">
-                    <li><a href="javascript:void(0);" class="logo_gov02"><span class="behind">국민지원금</span></a></li>
-                    <li><a href="javascript:void(0);" class="logo_zeropay"><span class="behind">ZeroPay</span></a></li>
-                </ul>
+                <div class="left">
+                    <a href="#" class="logo_zeropay">
+                        <span class="behind">함께하면 이겨낼 수 있습니다. 코로나 상생 국민지원금</span>
+                        <span class="behind">대한민국정부 ZeroPay</span>
+                    </a>
+                </div>
                 <ul class="right">
-                    <li><a href="javascript:void(0);">국민지원금 사용처 안내</a></li>
-                    <li><a href="javascript:void(0);">공지사항</a></li>
+                    <!-- <li><a href="#">국민지원금 사용처 안내</a></li> -->
+                    <li><a href="#">공지사항</a></li>
                 </ul>
             </div>
         </header>
@@ -70,7 +72,11 @@
                                                 <div class="txt_inp">
                                                     <input type="text" placeholder="보안문자를 입력하세요">
                                                 </div>
-                                                <div class="captcha_img" style="background: #ddd;"></div>
+                                                <div class="captcha_img">
+                                                    <img src="" alt="캡차이미지">
+                                                    <a href="#n" class="ic_audio">음성듣기</a>
+                                                    <a href="#n" class="ic_reload">새로고침</a>
+                                                </div>
                                             </li>
                                             <li class="mt35">
                                                 <a href="#n" class="btn_type06">확인하기</a>
@@ -88,52 +94,56 @@
                 <section class="section4">
                     <div class="inner">
                         <div class="table_col">
-                            <p class="title"><span>검색결과 2건</span></p>
+                            <p class="title">
+                                <span>검색결과 25건</span>
+                                <span class="msg">총 1,000 건(08.21일 기준)</span>
+                            </p>
                             <table>
                                 <caption>가맹점 검색결과입니다.</caption>
                                 <colgroup>
-                                    <col width="10%">
-                                    <col width="18%">
+                                    <col width="25%">
                                     <col width="">
-                                    <col width="15%">
-                                    <col width="24%">
+                                    <col width="25%">
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th>대표자</th>
                                         <th>가맹점명</th>
                                         <th>주소</th>
-                                        <th>전화번호</th>
-                                        <th>사용여부</th>
+                                        <th>카테고리</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>김제로</td>
                                         <td>스페인클럽</td>
-                                        <td>서울특별시 강남구 압구정로10길 26(신사동) 1층</td>
-                                        <td>02-515-1117</td>
-                                        <td>
-                                            <p class="color5">사용 가능 매장</p>
-                                            <a href="#none" class="btn_type07 mt10">가맹점 정보 수정하기</a>
-                                        </td>
+                                        <td class="text_l">서울특별시 강남구 압구정로10길 26(신사동) 1층</td>
+                                        <td>레스토랑</td>
                                     </tr>
                                     <tr>
-                                        <td>김제로</td>
-                                        <td>스페인클럽</td>
-                                        <td>서울특별시 강남구 압구정로10길 26(신사동) 1층</td>
-                                        <td>02-515-1117</td>
-                                        <td>
-                                            <p class="color4">사용 불가능 매장</p>
-                                            <a href="#none" class="btn_type07 mt10">제로페이 가맹점 신청하기</a>
-                                        </td>
+                                        <td>스페인카페</td>
+                                        <td class="text_l">서울특별시 강남구 벗꽃3길 26(제로길) 301호</td>
+                                        <td>카페/디저트</td>
                                     </tr>
+                                    <tr>
+                                        <td>닥터맘 강남서초</td>
+                                        <td class="text_l">서울특별시 강남구 논현로72길 33(역삼동) 305호</td>
+                                        <td>유료직업소개소</td>
+                                    </tr>
+                                    <!-- 검색결과 없음 -->
+                                    <tr class="tr_no">
+                                        <td colspan="3">검색결과가 없습니다.</td>
+                                    </tr>
+                                    <!--// 검색결과 없음 -->
                                 </tbody>
                             </table>
+
+                            <div class="local_gov">
+                                <p class="txt"><em>* </em>가맹점정보의 수정이 필요한 경우 지자체 콜센터로 연락주시기 바랍니다.</p>
+                                <a href="#" class="btn_link"><i class="icon"></i>지자체 콜센터</a>
+                            </div>
                         </div>
 
                         <!-- 페이징 -->
-                        <!-- <div class="pagination">
+                        <div class="pagination">
                             <a href="#none" class="first"><i class="icon_arr"></i><span class="behind">처음</span></a>
                             <a href="#none" class="prev"><i class="icon_arr"></i><span class="behind">이전</span></a>
                             <strong class="num current" title="현재페이지"><span>1</span></strong>
@@ -142,47 +152,11 @@
                             <a href="#none" class="num">4</a>
                             <a href="#none" class="next"><i class="icon_arr"></i><span class="behind">다음</span></a>
                             <a href="#none" class="last"><i class="icon_arr"></i><span class="behind">끝</span></a>
-                        </div> -->
+                        </div>
                         <!--// 페이징 -->
                     </div>
                 </section>
                 <!--// section4 검색결과 -->
-                
-                <!-- section2 -->
-                <section class="section2">
-                    <div class="inner">
-                        <ul class="banner">
-                            <li class="left">
-                                <a href="#">
-                                    <p class="text"><span>우리동네</span><br>국민지원금 사용처를<br><strong>한 번에 확인</strong>하세요!</p>
-                                    <span class="btn_type09">지맵 다운로드</span>
-                                </a>
-                            </li>
-                            <li class="right">
-                                <a href="#">
-                                    <p class="text"><span>사장님~ 우리가게가</span><br><strong>국민지원금 사용처</strong>인지<br>궁금하세요?</p>
-                                    <span class="btn_type09">지금 확인하기</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!--// section2 -->
-
-                <!-- section6 -->
-                <section class="section6">
-                    <div class="inner">
-                        <div class="channel">
-                            <ul>
-                                <li class="item1"><a href="#" target="_blank" title="새창열림">행정안전부</a></li>
-                                <li class="item2"><a href="#" target="_blank" title="새창열림">제로페이</a></li>
-                                <li class="item3"><a href="#" target="_blank" title="새창열림">경기지역화폐</a></li>
-                                <li class="item4"><a href="#" target="_blank" title="새창열림">온통대전</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!--// section6 -->
 
             </div>
             <!-- contents -->
@@ -191,11 +165,76 @@
         <!--// container -->
 
         <!-- footer -->
-        <footer class="foot_sch">
-            <div class="inner">
-                <p class="txt1">30128 세종특별자치시 정부2청사로 13(나성동) / 30116 세종특별자치시 한누리대로 411(어진동) / 30116 세종특별자치시 가름로 143(어진동)</p>
-                <p class="txt1">정부민원안내콜센터 국번없이110(무료), 행정안전부 콜센터 02-2100-3399(월~금 9:00~18:00, 공휴일 제외) / 팩스 044-204-8911(근무시간 외) 당직실 044-205-1600</p>
-                <p class="txt2">ⓒ Ministry of the Interior and Safety. All rights reserved.</p>
+        <footer class="foot_wrap">
+            <!-- section2 배너 -->
+            <section class="section2">
+                <div class="inner">
+
+                    <!-- case1 -->
+                    <ul class="banner type02">
+                        <li class="ban_01">
+                            <a href="#">
+                                <p class="text"><span>우리동네</span><br>국민지원금 사용처를 <strong>한 번에 확인</strong>하세요!</p>
+                                <span class="btn_type09">지맵 다운로드</span>
+                            </a>
+                        </li>
+                        <li class="ban_02">
+                            <a href="#">
+                                <p class="text"><span>사장님~ 우리가게가</span><br><strong>국민지원금 사용처</strong>인지 궁금하세요?</p>
+                                <span class="btn_type09">지금 확인하기</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--// case1 -->
+
+                    <!-- case2 -->
+                    <!-- <ul class="banner">
+                        <li class="ban_01">
+                            <a href="#">
+                                <p class="text"><span>우리동네</span><br>국민지원금 사용처를<br><strong>한 번에 확인</strong>하세요!</p>
+                                <span class="btn_type09">지맵 다운로드</span>
+                            </a>
+                        </li>
+                        <li class="ban_02">
+                            <a href="#">
+                                <p class="text"><span>사장님~ 우리가게가</span><br><strong>국민지원금 사용처</strong>인지<br>궁금하세요?</p>
+                                <span class="btn_type09">지금 확인하기</span>
+                            </a>
+                        </li>
+                        <li class="ban_03">
+                            <a href="#">
+                                <p class="text"><span>국민지원금 결제가능한</span><br><strong>온라인쇼핑몰</strong>과<br><strong>배달앱</strong>을 확인하세요</p>
+                                <span class="btn_type09">지금 확인하기</span>
+                            </a>
+                        </li>
+                    </ul> -->
+                    <!--// case2 -->
+                    
+                </div>
+            </section>
+            <!--// section2 배너 -->
+
+            <!-- section6 -->
+            <section class="section6">
+                <div class="inner">
+                    <div class="channel">
+                        <ul>
+                            <li class="item1"><a href="#" target="_blank" title="새창열림">행정안전부</a></li>
+                            <li class="item2"><a href="#" target="_blank" title="새창열림">제로페이</a></li>
+                            <li class="item3"><a href="#" target="_blank" title="새창열림">경기지역화폐</a></li>
+                            <li class="item4"><a href="#" target="_blank" title="새창열림">온통대전</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--// section6 -->
+
+            <div class="foot_sch">
+                <div class="inner">
+                    <p class="txt1">30128 세종특별자치시 정부2청사로 13(나성동) / 30116 세종특별자치시 한누리대로 411(어진동) / 30116 세종특별자치시 가름로 143(어진동)</p>
+                    <p class="txt1">정부민원안내콜센터 국번없이110(무료), 행정안전부 콜센터 02-2100-3399(월~금 9:00~18:00, 공휴일 제외) / 국민지원금 일반문의(행안부) 1533-2021</p>
+                    <p class="txt2">ⓒ Ministry of the Interior and Safety. All rights reserved.</p>
+                </div>
             </div>
         </footer>
         <!--// footer -->
